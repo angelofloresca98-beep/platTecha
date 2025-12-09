@@ -142,43 +142,26 @@ header {
 
     .nav-links {
         flex-direction: column;
-        width: 100%;
+        width: 60%;
+        max-width: 280px;
         height: 100vh;
         justify-content: center;
         background-color: violet;
         margin-top: -900px;
         transition: all 0.5s ease;
+
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding-left: 30px; 
     }
 
     .mobile-menu {
         margin-top: 0px;
-        border-bottom-left-radius: 30%;
     }
 
     .nav-links li {
-        margin: 30px auto;
-    }
-
-    .nav-links li::after {
-        content: '';
-        width: 0%;
-        height: 2px;
-        background: #f44336;
-        display: block;
-        margin: auto;
-        transition: width 0.5s ease;
-    }
-
-    .nav-links li:hover::after {
-        width: 100%;
-    }
-
-    .nav-links a {
-        transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-        color: #315070;
+        margin: 30px 0;
+        font-size: 22px;
     }
 }
 
@@ -496,7 +479,7 @@ html {
     flex-wrap: wrap;
 }
 
-img {
+.pictures img {
     width: 400px;
     height: 300px;
     border: 2px solid #ff3d0036;
@@ -506,6 +489,7 @@ img {
     margin: 10px;
     transition: 400ms;
 }
+
 
 .pictures img {
     /* filter: grayscale(1); */  /* Removed this to restore color */
