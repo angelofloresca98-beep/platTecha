@@ -444,3 +444,70 @@ html {
 .about {
     background-color: bisque;
 }
+
+/* Footer */
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff; /* Ensure heading is white */
+}
+
+.footer-links p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 5px 0;
+    color: #fff; /* Ensure text is white */
+}
+
+@media (max-width: 850px) {
+    .footer {
+        padding: 30px 15px;
+    }
+    .footer-links h3 {
+        font-size: 30px;
+    }
+    .footer-links p {
+        font-size: 20px;
+    }
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    cursor: pointer;
+    margin: 10px;
+    transition: 400ms;
+}
+
+.pictures img {
+    /* filter: grayscale(1); */  /* Removed this to restore color */
+    transform: scale(1.03);
+}
